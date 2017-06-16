@@ -1,0 +1,6 @@
+<settings>
+    <category>
+        <setting id="discoverable" type ="bool" label="30002" default="false"/>
+        <setting id="on_startup" type ="bool" label="30003" default="false"/>
+    </category>
+</settings>

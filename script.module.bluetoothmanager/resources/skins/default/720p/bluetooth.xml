@@ -1,0 +1,148 @@
+<window id="1200">
+	<defaultcontrol always="true">1201</defaultcontrol>
+	<controls>
+	    <include>Window_OpenClose_Animation_Zoom</include>
+	    <include>CommonBackground</include>
+	    <control type="button" id="1201">
+		    <description>Dummy Focus Button</description>
+		    <posx>-1</posx>
+		    <posy>-1</posy>
+		    <width>1</width>
+		    <height>1</height>
+		    <font>-</font>
+		    <texturenofocus border="5">xtouch_overlay.png</texturenofocus>
+		    <texturefocus border="5">xtouch_overlay.png</texturefocus>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<posx>0</posx>
+		<posy>0</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="label">
+			<description>Title</description>
+			<posx>20</posx>
+			<posy>0</posy>
+			<width>350</width>
+			<height>80</height>
+			<font>font30_title</font>
+			<aligny>center</aligny>
+			<label>Bluetooth Manager</label>
+		</control>
+
+		<control type="button" id="1206">
+			<description>Connection</description>
+			<posx>80r</posx>
+			<posy>20</posy>
+			<width>60</width>
+			<height>60</height>
+			<font>-</font>
+			<texturenofocus border="5">bluetooth_icon_connection.png</texturenofocus>
+			<texturefocus border="5">bluetooth_icon_connection.png</texturefocus>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>180r</posx>
+		<posy>90r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1202">
+			<description>Back Button</description>
+			<posx>90</posx>
+			<posy>0</posy>
+			<width>75</width>
+			<height>75</height>
+			<font>-</font>
+			<texturenofocus border="5">bluetooth_icon_back_w.png</texturenofocus>
+			<texturefocus border="5">bluetooth_icon_back_w.png</texturefocus>
+			<onclick>ActivateWindow(Home)</onclick>
+		</control>
+
+		<control type="button" id="1203">
+			<description>Settings Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>75</width>
+			<height>75</height>
+			<font>-</font>
+			<texturenofocus border="5">bluetooth_icon_settings_w.png</texturenofocus>
+			<texturefocus border="5">bluetooth_icon_settings_w.png</texturefocus>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<posx>490</posx>
+		<posy>100</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="label">
+			<description>Bluetooth label</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>200</width>
+			<height>120</height>
+			<font>font30_title</font>
+			<textcolor>white</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>Bluetooth</label>
+		</control>
+
+		<control type="label">
+			<visible>substring(Window(Home).Property(bluetooth),true)</visible>
+			<description>ON label</description>
+			<posx>150</posx>
+			<posy>0</posy>
+			<width>150</width>
+			<height>120</height>
+			<font>font30_title</font>
+			<textcolor>green</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>[B]$ADDON[script.module.bluetoothmanager 30000][/B]</label>
+	     	</control>
+		
+		<control type="label">
+			<visible>substring(Window(Home).Property(bluetooth),false)</visible>
+			<description>OFF label</description>
+			<posx>150</posx>
+			<posy>0</posy>
+			<width>150</width>
+			<height>120</height>
+			<font>font30_title</font>
+			<textcolor>red</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>[B]$ADDON[script.module.bluetoothmanager 30001][/B]</label>
+	     	</control>
+	    </control>
+
+            <control type="group">
+		<posx>0</posx>
+		<posy>300</posy>
+		<include>VisibleFadeEffect</include>
+	     	<control type="button" id="1204">
+			<description>Bluetooth ON Button</description>
+			<posx>240</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<font>-</font>
+			<texturenofocus border="5">bluetooth_icon_on.png</texturenofocus>
+			<texturefocus border="5">bluetooth_icon_on_click.png</texturefocus>
+	    	</control>
+	     	<control type="button" id="1205">
+			<description>Bluetooth OFF Button</description>
+			<posx>490r</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<font>-</font>
+			<texturenofocus border="5">bluetooth_icon_off.png</texturenofocus>
+			<texturefocus border="5">bluetooth_icon_off_click.png</texturefocus>
+	    	</control>
+	    </control>
+	</controls>
+</window>
+
+

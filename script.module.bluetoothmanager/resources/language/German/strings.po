@@ -1,0 +1,65 @@
+# Kodi Media Center language file
+# Addon Name: Bluetooth Manager
+# Addon id: script.module.bluetoothmanager
+# Addon Provider: Sven Pfotzer
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "ON"
+msgstr "AN"
+
+msgctxt "#30001"
+msgid "OFF"
+msgstr "AUS"
+
+msgctxt "#30002"
+msgid "Make Bluetooth discoverable"
+msgstr "Bluetooth sichtbar machen"
+
+msgctxt "#30003"
+msgid "Start Bluetooth on startup"
+msgstr "Bluetooth bei Systemstart starten"
+
+msgctxt "#30004"
+msgid "Start Bluetooth first"
+msgstr "Erst Bluetooth einschalten"
+
+msgctxt "#30005"
+msgid "Pair your device now"
+msgstr "Verbinde dein Gerät jetzt"
+
+msgctxt "#30006"
+msgid "Abort"
+msgstr "Abbrechen"
+
+msgctxt "#30007"
+msgid "Done"
+msgstr "Fertig"
+
+msgctxt "#30008"
+msgid "Do you want to connect a new device?"
+msgstr "Neues Gerät verbinden?"
+
+msgctxt "#30009"
+msgid "Device not connected yet, please wait"
+msgstr "Gerät wurde noch nicht verbunden, bitte warten"
+
+msgctxt "#30010"
+msgid "Warning"
+msgstr "Warnung"
+
+msgctxt "#30011"
+msgid "Connection"
+msgstr "Verbindung"
