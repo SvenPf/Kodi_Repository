@@ -164,6 +164,9 @@ class MainClass(xbmcgui.WindowXMLDialog):
 		setProperty(bluetooth)
 		check_settings()
 
+		if bluetooth == ON & run_command("pulseaudio --check"):
+			run_command("pulseaudio -D")
+
 	def onClick(self, controlID):
 		global bluetooth
 
@@ -178,10 +181,6 @@ class MainClass(xbmcgui.WindowXMLDialog):
 				bluetooth = ON
 				run_command("sudo rfkill unblock bluetooth")
 				#run_command("sudo hcitool hci0 up")
-
-				#if run_command("pulseaudio --check"):
-				#	run_command("pulseaudio -D")
-
 				setProperty(bluetooth)
 
 		if controlID == OFF_BUTTON:
