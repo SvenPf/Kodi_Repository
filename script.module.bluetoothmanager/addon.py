@@ -65,9 +65,9 @@ def check_settings():
 			run_command("sudo hciconfig hci0 noscan")
 	
 	if addon.getSetting('on_startup') == "true":
-		replaceLine("/home/pi/Startup_Scripts/phrase.py", "\"block\"", "\"unblock\"", 1)
+		replaceLine("/home/pi/.scripts/.startup/bluetooth_manager/phrase.py", "\"block\"", "\"unblock\"", 1)
 	else:
-		replaceLine("/home/pi/Startup_Scripts/phrase.py", "\"unblock\"", "\"block\"", 1)
+		replaceLine("/home/pi/.scripts/.startup/bluetooth_manager/phrase.py", "\"unblock\"", "\"block\"", 1)
 	
 
 def run_command(command):
