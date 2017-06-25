@@ -1,0 +1,6 @@
+<settings>
+    <category>
+        <setting id="min_brightness" type ="number" label="30000" default="10"/>
+        <setting id="max_brightness" type ="number" label="30001" default="255"/>
+    </category>
+</settings>

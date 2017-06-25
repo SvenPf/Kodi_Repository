@@ -1,0 +1,39 @@
+<window id="1200">
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<controls>
+            <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+                <posx>25</posx>
+	        <posy>20</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="slider" id="1201">
+                        <description>My first slider control</description>
+                        <left>0</left>
+                        <top>0</top>
+                        <width>500</width>
+                        <height>40</height>
+			<texturesliderbar>backlight_slidebar.png</texturesliderbar>
+      			<textureslidernib>backlight_slider.png</textureslidernib>
+			<textureslidernibfocus>backlight_slider.png</textureslidernibfocus>
+                        <orientation>horizontal</orientation>
+                </control>
+            </control>
+	    <control type="group">
+		<posx>0</posx>
+		<posy>80</posy>
+		<control type="button" id="1202">
+			<description>Back Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>635</height>
+			<font>-</font>
+			<texturenofocus border="5">backlight_dummy.png</texturenofocus>
+			<texturefocus border="5">backlight_dummy.png</texturefocus>
+			<onclick>ParentDir</onclick>
+		</control>
+	    </control>
+	</controls>
+</window>
+
+
